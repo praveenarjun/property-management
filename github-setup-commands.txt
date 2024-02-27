@@ -4,7 +4,7 @@ FIRST TIME GIT & GITHUB SETUP
 2.git add
 3. git commit -m "any message"
 4. git remote add origin https://github.com/praveenchalla/property-management.git
-5.git remote set -url origin https://praveen:ghp//token
+5.git remote set -url origin https://praveenarjun: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@github.com/praveenarjun/property-management.git
 6. git push --set-upstream origin master
 
 
