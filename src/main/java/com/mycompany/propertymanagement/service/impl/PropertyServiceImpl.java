@@ -6,14 +6,19 @@ import com.mycompany.propertymanagement.entity.PropertyEntity;
 import com.mycompany.propertymanagement.repository.PropertyRepository;
 import com.mycompany.propertymanagement.service.PropertyService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+
 @Service // singleton only one time instance  been created
 public class PropertyServiceImpl implements PropertyService {
+    @Value("${pms.dummy:}")
+    private String dummy;
+
     @Autowired
     private PropertyRepository propertyRepository;
     @Autowired
@@ -29,7 +34,7 @@ public class PropertyServiceImpl implements PropertyService {
 
     @Override
     public List<PropertyDTO> getAllProperties() {
-
+        System.out.println("Inside service:"+dummy);
         List<PropertyEntity> listOfProps = (List<PropertyEntity>)propertyRepository.findAll();
         List<PropertyDTO> propList = new ArrayList<>();
 
