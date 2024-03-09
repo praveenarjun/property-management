@@ -1,4 +1,4 @@
-package com.mycompany.propertymanagement.service.impl;
+package com.mycompany.propertymanagement.service;
 
 import com.mycompany.propertymanagement.dto.UserDTO;
 
