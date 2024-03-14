@@ -6,7 +6,6 @@ import com.mycompany.propertymanagement.entity.UserEntity;
 import com.mycompany.propertymanagement.exception.BusinessException;
 import com.mycompany.propertymanagement.exception.ErrorModel;
 import com.mycompany.propertymanagement.repository.UserRepository;
-import com.mycompany.propertymanagement.service.PropertyService;
 import com.mycompany.propertymanagement.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
